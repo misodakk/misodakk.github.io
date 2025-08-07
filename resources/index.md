@@ -36,7 +36,11 @@
 
 特殊的一些软件，NavicatPremium 参考这篇[大佬的博客](https://github.lijunyi.xyz/blogs/app/2022/NavicatPremium16.html)；
 
-Jetbrains 全家桶优先使用 [IPFS](https://3.jetbra.in/)，或者使用热心网友制作的 [jetbra-free](https://gitee.ltd/Lee/jetbra-free)，带 Web GUI 可破插件（插件不成功可使用 [plugin-privacy](https://gitea.998043.xyz/novice/plugin-privacy) 解决），架设服务器参考[这个频道](https://t.me/ja_netfilter_group)；无论哪一种，源头貌似都是来源始皇的 ja-netfilter，不得不说 NB。
+Jetbrains 全家桶优先使用 [IPFS](https://3.jetbra.in/)，或者使用热心网友制作的 [jetbra-free](https://gitee.ltd/Lee/jetbra-free)，带 Web GUI 可破插件（插件不成功可使用 [plugin-privacy](https://gitea.998043.xyz/novice/plugin-privacy) 解决），架设服务器参考[这个频道](https://t.me/ja_netfilter_group)；懒人的福音，一键脚本：`irm ckey.run/debug|iex`
+
+无论哪一种，源头貌似都是来源始皇的 ja-netfilter，不得不说 NB。
+
+IDM 可以跟随[这个发布网站](https://idm.ckk.ir/)进行更新。
 
 ## MacOS
 
@@ -54,4 +58,8 @@ Jetbrains 全家桶优先使用 [IPFS](https://3.jetbra.in/)，或者使用热�
 1. [rutor](https://rutor.info/)
 
    俄罗斯，版权 Open
+
+2. 新闻聚合
+
+   体验比较好的一个，[开源地址](https://github.com/LYX9527/what-happen) / [在线地址](https://news.yltfspace.com/)，但是目前体验有点卡顿
 

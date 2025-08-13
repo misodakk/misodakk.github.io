@@ -3,12 +3,22 @@
 
 {{< figure src="https://img.misoda.eu.org/file/1753030262794_EzuyH5sVgAQJO26_副本.png" title="感觉自己萌萌哒" >}}
 
-收集一些自己常用的资源站，不在多而在于精，理想条件下是一个网站解决所有需求，再加一个备用。
+收集一些自己常用的**资源站**，不在多而在于精，理想条件下是一个网站解决所有需求，再加几个备用。
 并不想做成一个导航。
 
 关于学习资源，奈何囊中羞涩，一些软件的定价过于离谱，基本都转向了订阅制，用学习版也是迫不得已。
 
 根据目前的体验，MacOS 的资源是最简单获取的，Windows 是最难的，一些热门软件 DMCA 太严重了（俄罗斯的网站相对宽松），例如 Navicat、IDM，Android 的资源还可以，iOS 没啥必要，自签也只能解决一小部分。
+
+{{< admonition tip "小提示" true >}}
+
+本页面可能会包含一些具体的软件和服务，但是主要以综合的资源站为主；
+
+博主自用的软件整理请移步 [**我的软件清单&军火库**](/我的软件清单军火库/)，这个系列也会包含一些<del>穷鬼开发者【指可免费使用】</del>开发调试用到的一些可爱的环境提供服务商。
+
+同样缓慢整理中... (•̀ᴗ•́)و ̑̑
+
+{{< /admonition >}}
 
 <br/>
 <br/>
@@ -53,6 +63,10 @@ IDM 可以跟随[这个发布网站](https://idm.ckk.ir/)进行更新。
 
 特别推荐，X 优化版 [piko](https://github.com/crimera/piko)，广告跳过 [GKD](https://github.com/gkd-kit/gkd) 配合 Shizuku。
 
+## AI 相关资源
+
+1. [魔塔社区](https://modelscope.cn/home)
+
 ## 其他
 
 1. [rutor](https://rutor.info/)
@@ -62,4 +76,12 @@ IDM 可以跟随[这个发布网站](https://idm.ckk.ir/)进行更新。
 2. 新闻聚合
 
    体验比较好的一个，[开源地址](https://github.com/LYX9527/what-happen) / [在线地址](https://news.yltfspace.com/)，但是目前体验有点卡顿
+
+## 免费网盘
+
+- [钛盘](https://www.tmp.link/)
+  免费好用的临时文件分享服务
+- [萌盘](https://pan.moe/login)
+- [Koofr](https://koofr.eu/)
+  10G 免费，支持 WebDAV
 

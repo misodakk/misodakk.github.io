@@ -82,6 +82,7 @@ brew bundle --file="~/Desktop/Brewfile"
 1. FinalShell
 2. Termius
 3. kitty
+4. WindTerm
 
 除了 kitty 大多数感觉卡顿严重，也许我机器太老了。
 ## 通用&服务类

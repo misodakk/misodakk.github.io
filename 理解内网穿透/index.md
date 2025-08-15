@@ -306,3 +306,7 @@ UDP Hole Punching（UDP 打洞）原理是当两个位于不同 NAT 后面的客
 
 路由器中这个功能默认是关闭的，我也不建议开启，它带来的风险比较大。
 
+### CloudflareTunnels
+
+简单安全的暴露自己的 web 服务可以使用 CloudflareTunnels，但是隐藏在 CF 的后面必然会慢一些，国内某些地方的网络也可能不通。
+

@@ -43,6 +43,16 @@ Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Elect
 2. WO Mic
 
    还没舍得买麦克风，用手机当作电脑麦克风
+
+3. FastKeys
+
+   强大的自动化工具，最常用的是 Mac 上类似的"自定义短语"功能。
+
+4. [Windows Update Disabler](https://github.com/tsgrgo/windows-update-disabler)
+
+   最近的 Windows11 更新补丁导致 SSD 掉盘的风波，真的不太信任微软的这帮啊三了。
+   
+5. 主题美化 [niivu](https://www.deviantart.com/niivu)
 ### 快速启动
 
 基本再用 uTools，最近看官方好像限制插件数量，引起不小的风波，如果没影响继续使用，有影响就换，我插件用的很少，基本就用个 截图 OCR + 翻译
@@ -79,12 +89,13 @@ brew bundle --file="~/Desktop/Brewfile"
 
 参考 Windows 中的介绍，Xshell 没有 Mac 版，现在使用默认终端 + 食用；
 
-1. FinalShell
-2. Termius
-3. kitty
-4. WindTerm
+1. Ghostty
+2. FinalShell
+3. Termius
+4. kitty
+5. WindTerm
 
-除了 kitty 大多数感觉卡顿严重，也许我机器太老了。
+Termius 感觉卡顿严重，也许我机器太老了。
 ## 通用&服务类
 
 ### 插件

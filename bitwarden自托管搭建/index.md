@@ -113,6 +113,10 @@ export SYNO_USE_TEMP_ADMIN=1
 
 强烈建议保存密码的时候手动编辑下名称和分组，一时默认爽，整理的时候头都大了。
 
+> [!TIP]
+>
+> 如果感觉官方的 App 不好用，可以试试 Keyguard
+
 ## 导入 2FA
 
 因为我平常使用的是 Google Authenticator，现在想转移到 Bitwarden 中一份，当初并没有保存密钥，而 Google Authenticator 中也不支持查看原始密钥；

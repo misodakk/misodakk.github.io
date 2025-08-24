@@ -3,7 +3,7 @@
 
 起因是最近重装了系统，虽然有备份还原可用，但是垃圾也会一起还原，所以直接从头开始，比较之前也装了很多乱七八糟的东西，但是基本就没用过。。。。
 
-但是现在都已经全部弄完了，现在才想起来记录一下，emmmm<!--more-->
+但是现在都已经全部弄完了，现在才想起来记录一下，emmmm，之后想到了就会更新的。<!--more-->
 
 目前我使用的设备有 Windows11 台式机、一台 MBP、一台 MacMini，所以软件生态会分 Win 和 macOS，开发使用 macOS 居多，其他都是 Win。
 
@@ -32,6 +32,23 @@
    如果用，推荐[这个补丁](https://github.com/ArcSurge/Termius-Pro-zh_CN?tab=readme-ov-file)
 
 Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Electron 你不要过来啊），外加没中文劝退了。
+
+### 效率工具
+
+装机必备，提升操作效率！
+
+1. PixPin - 截图贴图
+
+   Snipaste 也很好用，可惜不支持 OCR
+
+2. Ditto - 剪切板管理
+
+   作者貌似删库了，替代选择：CopyQ
+
+3. FastKeys
+
+   强大的自动化工具，最常用的是 Mac 上类似的"自定义短语"功能。
+
 ### 补丁增强
 
 可能有风险，谨慎使用（指被封号）。
@@ -43,10 +60,6 @@ Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Elect
 2. WO Mic
 
    还没舍得买麦克风，用手机当作电脑麦克风
-
-3. FastKeys
-
-   强大的自动化工具，最常用的是 Mac 上类似的"自定义短语"功能。
 
 4. [Windows Update Disabler](https://github.com/tsgrgo/windows-update-disabler)
 

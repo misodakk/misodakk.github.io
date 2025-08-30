@@ -61,11 +61,18 @@ Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Elect
 
    还没舍得买麦克风，用手机当作电脑麦克风
 
-4. [Windows Update Disabler](https://github.com/tsgrgo/windows-update-disabler)
+3. [Windows Update Disabler](https://github.com/tsgrgo/windows-update-disabler)
 
    最近的 Windows11 更新补丁导致 SSD 掉盘的风波，真的不太信任微软的这帮啊三了。
-   
-5. 主题美化 [niivu](https://www.deviantart.com/niivu)
+
+4. 主题美化 [niivu](https://www.deviantart.com/niivu)
+
+5. [DevManView](https://www.nirsoft.net/utils/device_manager_view.html)
+
+   驱动管理，IOBit 的 *Driver Booster PRO* 也很不错。
+
+6. WizTree
+   磁盘空间分析，另一个古老软件是 SpaceSniffer
 ### 快速启动
 
 基本再用 uTools，最近看官方好像限制插件数量，引起不小的风波，如果没影响继续使用，有影响就换，我插件用的很少，基本就用个 截图 OCR + 翻译
@@ -284,4 +291,12 @@ Yandex 目前感觉效果应该是最好的，但是魔法网络环境问题，�
 开发 GUI 的 Ubuntu，服务器 Debian，折腾 Arch；
 
 像折腾又不想太折腾，基于 Arch Linux 的 CachyOS ？
+
+- [ONLYOFFICE](https://www.onlyoffice.com/zh/)
+
+  好用的 Office 替代，其他还有知名的 *LibreOffice*。
+
+- CloudDrive2
+
+  网盘聚合和本地挂载，其他的还有 AList 的分叉版本 OpenList。
 

@@ -826,6 +826,9 @@ clash DNS 请求逻辑：
 因此，在 nameserver 和 fallback 内都放置无污染、解析速度较快的国内 DNS 服务器，以达到最快的解析速度。
 但是 fallback 列表内服务器会用在解析境外网站，为了结果绝对无污染，可以使用支持 DoT/DoH 的服务器。
 
+> [!TIP]
+> 模板配置中，我在 nameserver、proxy-server-nameserver、default-nameserver 配置了国外的 DNS，实际测试中部分中转机场使用国外 DNS 会解析到"错误的 IP"，导致速度上不去；并且对于某些国内冷门网站，CDN 匹配效果不好，访问速度也很慢，如果有和我相同的问题，可以把这三个都换成注释的国内 DNS。
+
 fake-ip-filter 的作用就是让一些请求不走 fake-ip，因为有些功能 dns 返回私有 IP 是会有问题的，再说国内的网站也没必要。
 
 特殊的两个：default-nameserver 是默认的 DNS，必须是 IP，用于解析 DNS 服务器的域名；而 proxy-server-nameserver 仅用于解析代理节点的域名，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置。

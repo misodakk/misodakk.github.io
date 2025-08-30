@@ -30,7 +30,7 @@
 ## Windows/综合
 
 1. [4 分贝](https://4fb.cn/) :tada:
-     <br/>可以说是 423 down 完美替代
+     <br/>可以说是 423 down 完美替代，但是资源不是很全。
 
 2. [佛系软件](https://foxirj.com/)
 
@@ -39,6 +39,8 @@
      下载安装推荐使用 [Adobe Downloader](https://github.com/X1a0He/Adobe-Downloader)
 
      或者还可以看看 [GenP](https://github.com/etherized/GenP) 这个项目
+
+3. [52pojie](https://www.52pojie.cn/)
 
 4. [cybermania](https://www.cybermania.ws/)
 
@@ -51,6 +53,40 @@ Jetbrains 全家桶优先使用 [IPFS](https://3.jetbra.in/)，或者使用热�
 无论哪一种，源头貌似都是来源始皇的 ja-netfilter，不得不说 NB。
 
 IDM 可以跟随[这个发布网站](https://idm.ckk.ir/)进行更新。
+
+---
+
+**Windows 镜像：**
+
+- [山己几子木](https://msdn.sjjzm.com/win11.html) :tada:
+
+- [MSDN 我告诉你](https://next.itellyou.cn/)
+
+- [系统库](https://www.xitongku.com/)
+
+- [吻妻](https://www.newxitong.com/)
+
+  专注 Win7？
+
+**精简版 Windows：**
+
+Revision 和 Atlasos 现在都采取 AME Wizard 精简方式。Atlasos 还提供了 Windows10 / 11 **原版** ISO 下载链接，可直接选择简体中文语言版本下载，免去以往设置中文需要进系统下载中文语言包的繁琐。
+
+所谓的 AME Wizard 就是需要你先安装原本 ISO 镜像并且激活，然后运行他们的软件进行精简，因为直接制作 ISO 分发会被微软起诉。
+
+在系统精简上 Revision 更激进，内存管理也是 Revision 更优秀，但是 Atlasos 使用起来更流畅。
+
+AME Wizard 安装方式对虚拟机使用不太友好，还是 ISO 直接安装方便，虽然这违反了用户协议。。。
+这时候就可以尝试 NTDEV 发布的 ISO，安装完即可使用。
+
+- [Revision](https://revi.cc/)
+- [Atlasos](https://atlasos.net/)
+- [NTDEV](https://archive.org/details/@ntdev)
+- [Windows X-Lite](https://windowsxlite.com/downloads/)
+
+可以搭配 [Windows Update Blocker](https://www.sordum.org/9470/windows-update-blocker-v1-8/) 来屏蔽系统更新。
+
+关闭 Windows Defender 可以参考 [YourAV](https://github.com/Tlaster/YourAV) ，原理是注册一个假的杀毒软件，WD 自己就关了
 
 ## MacOS
 
@@ -77,11 +113,16 @@ IDM 可以跟随[这个发布网站](https://idm.ckk.ir/)进行更新。
 
    体验比较好的一个，[开源地址](https://github.com/LYX9527/what-happen) / [在线地址](https://news.yltfspace.com/)，但是目前体验有点卡顿
 
+3. [LDLive](https://live.smnet.studio/)
+
+   L 站网友提供的免费直播
+
 ## 免费网盘
 
 - [钛盘](https://www.tmp.link/)
   免费好用的临时文件分享服务
 - [萌盘](https://pan.moe/login)
+- [取文件](https://quwenjian.com/session)
 - [Koofr](https://koofr.eu/)
   10G 免费，支持 WebDAV
 

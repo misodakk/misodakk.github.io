@@ -827,7 +827,7 @@ clash DNS 请求逻辑：
 但是 fallback 列表内服务器会用在解析境外网站，为了结果绝对无污染，可以使用支持 DoT/DoH 的服务器。
 
 > [!TIP]
-> 模板配置中，我在 nameserver、proxy-server-nameserver、default-nameserver 配置了国外的 DNS，实际测试中部分中转机场使用国外 DNS 会解析到"错误的 IP"，导致速度上不去；并且对于某些国内冷门网站，CDN 匹配效果不好，访问速度也很慢，如果有和我相同的问题，可以把这三个都换成注释的国内 DNS。
+> 模板配置中，我在 nameserver、proxy-server-nameserver、default-nameserver 配置了国外的 DNS（防止 DNS 泄露），实际测试中部分中转机场使用国外 DNS 会解析到"错误的 IP"，导致速度上不去；并且对于某些国内冷门网站，CDN 匹配效果不好，访问速度也很慢，如果有和我相同的问题，可以把这三个都换成注释的国内 DNS。
 
 fake-ip-filter 的作用就是让一些请求不走 fake-ip，因为有些功能 dns 返回私有 IP 是会有问题的，再说国内的网站也没必要。
 

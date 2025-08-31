@@ -261,28 +261,6 @@ sing-box 还是有点望而却步。
 
    需要 L 站 lv2+，且用且珍惜
 
-### 以图搜图
-
-之前 Google 的搜图挺好用的，但是感觉从 Lens 之后，准确度不太行
-
-1. [Yandex](https://yandex.ru/images)
-
-2. [Bing](https://cn.bing.com/visualsearch?mkt=zh-CN)
-
-3. [Saucenao](https://saucenao.com/)
-
-   二刺螈，再放几个备用的
-   
-   https://trace.moe/
-   
-   https://3d.iqdb.org/
-   
-   https://www.iqdb.org/
-   
-   https://ascii2d.net/
-
-Yandex 目前感觉效果应该是最好的，但是魔法网络环境问题，很可能用不了，所以建议直接使用 ru 的域名，这个除了语言问题搜图是无限制的。
-
 
 ## 其他 Misc
 

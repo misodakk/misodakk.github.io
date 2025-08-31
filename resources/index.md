@@ -83,6 +83,7 @@ AME Wizard 安装方式对虚拟机使用不太友好，还是 ISO 直接安装�
 - [Atlasos](https://atlasos.net/)
 - [NTDEV](https://archive.org/details/@ntdev)
 - [Windows X-Lite](https://windowsxlite.com/downloads/)
+- 远景论坛分享
 
 可以搭配 [Windows Update Blocker](https://www.sordum.org/9470/windows-update-blocker-v1-8/) 来屏蔽系统更新。
 
@@ -98,6 +99,28 @@ AME Wizard 安装方式对虚拟机使用不太友好，还是 ISO 直接安装�
 ## 移动端
 
 特别推荐，X 优化版 [piko](https://github.com/crimera/piko)，广告跳过 [GKD](https://github.com/gkd-kit/gkd) 配合 Shizuku。
+
+## 以图搜图
+
+之前 Google 的搜图挺好用的，但是感觉从 Lens 之后，准确度不太行
+
+1. [Yandex](https://yandex.ru/images)
+
+2. [Bing](https://cn.bing.com/visualsearch?mkt=zh-CN)
+
+3. [Saucenao](https://saucenao.com/)
+
+   二刺螈，再放几个备用的
+
+   https://trace.moe/
+
+   https://3d.iqdb.org/
+
+   https://www.iqdb.org/
+
+   https://ascii2d.net/
+
+Yandex 目前感觉效果应该是最好的，但是魔法网络环境问题，很可能用不了，所以建议直接使用 ru 的域名，这个除了语言问题搜图是无限制的。
 
 ## AI 相关资源
 

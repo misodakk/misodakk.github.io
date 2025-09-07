@@ -244,11 +244,13 @@ sing-box 还是有点望而却步。
 除必要情况，使用 Emby 公费服，一个月几块钱换来的质量比 CMS 的那些资源要高的多。
 主要是亲戚朋友让你给找资源，总不能给个网盘分享吧，不是 VIP 的体验也没多好，还是在线看的体验好一些，可以直接从这些资源站找，比一般的满屏广告的野站要好的多。
 
-1. [MoonTV](https://github.com/LunaTechLab/MoonTV)
+1. ~~[MoonTV](https://github.com/LunaTechLab/MoonTV)~~
 
    Web 服务聚合，对应的独立客户端选择 [LibreTV-App](https://github.com/KeyRotate/LibreTV-App)
 
-   更新：存活了不到一个月，被人举报 DMCA 了，转生版本 [LunaTV](https://github.com/MoonTechLab/LunaTV)，不过作者不打算开源了，具体资源关注作者吧。
+   更新：存活了不到一个月，被人举报 DMCA 了，转生版本 [LunaTV](https://github.com/MoonTechLab/LunaTV)，现在也放弃维护了。
+
+   替代先参考 [KatelyaTV](https://github.com/katelya77/KatelyaTV) 吧。
 
 2. [爱看机器人](https://v.ikanbot.com/)
 

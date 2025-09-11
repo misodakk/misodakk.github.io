@@ -652,6 +652,10 @@ format 可选 **yaml / text / mrs**，默认 yaml，其中 mrs 是二进制格�
 
 根据这些分流规则我也手撸了个 Surge 的，相比之下 Surge 就简单多了。
 
+## 域名嗅探
+
+也就是配置文件中的 sniffer 部分，建议是开启，它的作用是通过分析第一个数据包判断是哪一个域名，比如某个软件进行了 DNS 请求，之后会一直使用 IP 来进行通信，sniffer 的作用就类似是根据 IP 来反推出域名，然后让分流规则更加精确，它可以通过 DNS 劫持、Fake-IP 缓存、SNI 等手段进行分析。
+
 ## DNS 与 QUIC
 
 回到文章开始提到的 ERR_CONNECTION_CLOSED 问题，经过我观察日志，可以确定是 QUIC 的问题。

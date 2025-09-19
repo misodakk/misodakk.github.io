@@ -96,6 +96,8 @@ AME Wizard 安装方式对虚拟机使用不太友好，还是 ISO 直接安装�
 3. [appstorrent](https://appstorrent.ru/)
 4. [torrentmac](https://www.torrentmac.net/)
 
+Office 相关也可以看看 [Microsoft-Office-For-MacOS](https://alsyundawy.github.io/Microsoft-Office-For-MacOS/)
+
 ## 移动端
 
 特别推荐，X 优化版 [piko](https://github.com/crimera/piko)，广告跳过 [GKD](https://github.com/gkd-kit/gkd) 配合 Shizuku。

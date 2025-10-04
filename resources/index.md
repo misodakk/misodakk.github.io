@@ -81,7 +81,7 @@ AME Wizard 安装方式对虚拟机使用不太友好，还是 ISO 直接安装�
 
 - [Revision](https://revi.cc/)
 - [Atlasos](https://atlasos.net/)
-- [NTDEV](https://archive.org/details/@ntdev)
+- [NTDEV](https://archive.org/details/@ntdev) / [tiny11](https://github.com/ntdevlabs/tiny11builder)
 - [Windows X-Lite](https://windowsxlite.com/downloads/)
 - 远景论坛分享
 
@@ -96,11 +96,13 @@ AME Wizard 安装方式对虚拟机使用不太友好，还是 ISO 直接安装�
 3. [appstorrent](https://appstorrent.ru/)
 4. [torrentmac](https://www.torrentmac.net/)
 
-Office 相关也可以看看 [Microsoft-Office-For-MacOS](https://alsyundawy.github.io/Microsoft-Office-For-MacOS/)
+~~Office 相关也可以看看 [Microsoft-Office-For-MacOS](https://alsyundawy.github.io/Microsoft-Office-For-MacOS/)~~
 
 ## 移动端
 
 特别推荐，X 优化版 [piko](https://github.com/crimera/piko)，广告跳过 [GKD](https://github.com/gkd-kit/gkd) 配合 Shizuku。
+
+[APK 提取](https://apkcombo.com/zh/downloader/) :tada:
 
 ## 以图搜图
 

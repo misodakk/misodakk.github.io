@@ -27,7 +27,7 @@
 缓慢整理中 **也许会忘记也说不定呢**.
 {{< /style >}}
 
-## Windows/综合
+## Windows 软件/综合
 
 1. [4 分贝](https://4fb.cn/) :tada:
      <br/>可以说是 423 down 完美替代，但是资源不是很全。
@@ -54,9 +54,7 @@ Jetbrains 全家桶优先使用 [IPFS](https://3.jetbra.in/)，或者使用热�
 
 IDM 可以跟随[这个发布网站](https://idm.ckk.ir/)进行更新。
 
----
-
-**Windows 镜像：**
+#### Windows 镜像
 
 - [山己几子木](https://msdn.sjjzm.com/win11.html) :tada:
 
@@ -68,7 +66,7 @@ IDM 可以跟随[这个发布网站](https://idm.ckk.ir/)进行更新。
 
   专注 Win7？
 
-**精简版 Windows：**
+#### 精简版 Windows
 
 Revision 和 Atlasos 现在都采取 AME Wizard 精简方式。Atlasos 还提供了 Windows10 / 11 **原版** ISO 下载链接，可直接选择简体中文语言版本下载，免去以往设置中文需要进系统下载中文语言包的繁琐。
 
@@ -84,6 +82,7 @@ AME Wizard 安装方式对虚拟机使用不太友好，还是 ISO 直接安装�
 - [NTDEV](https://archive.org/details/@ntdev) / [tiny11](https://github.com/ntdevlabs/tiny11builder)
 - [Windows X-Lite](https://windowsxlite.com/downloads/)
 - 远景论坛分享
+- 不忘初心博客
 
 可以搭配 [Windows Update Blocker](https://www.sordum.org/9470/windows-update-blocker-v1-8/) 来屏蔽系统更新。
 
@@ -98,11 +97,106 @@ AME Wizard 安装方式对虚拟机使用不太友好，还是 ISO 直接安装�
 
 ~~Office 相关也可以看看 [Microsoft-Office-For-MacOS](https://alsyundawy.github.io/Microsoft-Office-For-MacOS/)~~
 
+## 在线工具
+
+#### 网络相关
+
+- 通用 IP 检查
+
+  https://ipinfo.io
+
+- Ping 测试
+
+  https://ping.pe
+
+- 连通性检查
+
+  https://www.17ce.com
+
+- 通用测速
+
+  https://www.speedtest.net
+
+- Netflix 测速
+
+  https://fast.com
+
+- CF 测速
+
+  https://speed.cloudflare.com
+
+- 工具箱整合
+
+  https://ipcheck.ing
+
+伪装性检测：
+
+- 通用
+
+  https://whoer.net/zh
+
+  https://browserleaks.com/ip
+
+- IP 欺诈性检查
+
+  https://scamalytics.com/ip
+
+- DNS 泄露检查
+
+  https://ipleak.net
+
+- WebRTC 泄露检查
+
+  https://browserleaks.com/webrtc
+
+其他工具：
+
+- ICANN 查询
+
+  https://lookup.icann.org/en
+
+- 网络服务探测
+
+  https://fofa.info
+
+- 网站分析
+
+  https://web-check.xyz
+
+IP 检查备用：
+
+- https://ip.skk.moe
+- https://ip.im
+
+#### 颜色
+
+中国传统色彩：
+
+https://hao.uisdc.com/color
+
+https://colors.ichuantong.cn
+
+https://github.com/zerosoul/chinese-colors
+
+日本传统色彩： https://colors.limboy.me
+
+底图选取关键词推荐：完美对称无缝平铺背景图底纹素材
+
+渐变： https://bg.ibelick.com/
+
 ## 移动端
 
 特别推荐，X 优化版 [piko](https://github.com/crimera/piko)，广告跳过 [GKD](https://github.com/gkd-kit/gkd) 配合 Shizuku。
 
 [APK 提取](https://apkcombo.com/zh/downloader/) :tada:
+
+**iOS 自签工具：**
+
+- AltStore
+- sideloadly
+- SideStore
+- 轻松签
+- 爱思助手之类的软件也提供自签工具
 
 ## 以图搜图
 

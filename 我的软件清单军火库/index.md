@@ -283,4 +283,14 @@ sing-box 还是有点望而却步。
 - CloudDrive2
 
   网盘聚合和本地挂载，其他的还有 AList 的分叉版本 OpenList。
+  
+- Sheas Cealer
+
+  无代理 SNI 伪造工具
+
+老系统浏览器：
+
+- 百分浏览器
+- Supermium
+- Thorium
 

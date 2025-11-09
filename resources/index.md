@@ -38,7 +38,7 @@
 
      下载安装推荐使用 [Adobe Downloader](https://github.com/X1a0He/Adobe-Downloader)
 
-     或者还可以看看 [GenP](https://github.com/etherized/GenP) 这个项目
+     或者还可以看看 [GenP](https://github.com/etherized/GenP) 这个项目或者 [gen.paramore](https://gen.paramore.su/)，可惜 vposy 大佬停更了
 
 3. [52pojie](https://www.52pojie.cn/)
 

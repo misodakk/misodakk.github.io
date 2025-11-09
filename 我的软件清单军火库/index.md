@@ -30,6 +30,8 @@
 4. Termius
 
    如果用，推荐[这个补丁](https://github.com/ArcSurge/Termius-Pro-zh_CN?tab=readme-ov-file)
+   
+5. MobaXterm
 
 Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Electron 你不要过来啊），外加没中文劝退了。
 
@@ -52,6 +54,8 @@ Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Elect
 4. Notepad Next
 
    Notepad++ 的替代品，++ 的作者近些年感觉有点颠，推荐替换
+
+affinity 的软件宣布免费了，可以一定程度替代 adobe。
 
 ### 补丁增强
 
@@ -77,6 +81,25 @@ Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Elect
 
 6. WizTree
    磁盘空间分析，另一个古老软件是 SpaceSniffer
+
+7. Wise Disk Cleaner
+
+   国产出口的免费系统清理，挺清爽，体验还不错，可以配合 dism++ 使用
+
+> 来自海外的软件工程师 Enderman 发现，Win 11 的资源管理器默认启用的「自动发现」功能，会严重降低性能。
+>
+> 还有网友表示，开始菜单的搜索框，会默认先让必应在线搜索显示，既浪费系统资源，又让搜文件变慢。
+
+可以尝试通过 power shell 来禁用：
+
+``` sh
+Set-ItemProperty -Path 'HKCU:\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell' -Name 'FolderType' -Value 'NotSpecified' -Type String
+
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" -Value 0 -Type DWord
+```
+
+至于效果，目前还没特别大的感觉。
+
 ### 快速启动
 
 基本再用 uTools，最近看官方好像限制插件数量，引起不小的风波，如果没影响继续使用，有影响就换，我插件用的很少，基本就用个 截图 OCR + 翻译

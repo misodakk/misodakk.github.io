@@ -8,9 +8,16 @@ Q："文章可以多配些步骤图吗，更直观"
 
 A："不行，我懒人，太麻烦，省电模式中，再说吧"
 
+
+
+> [!TIP]
+>
+> 2026-1-18：  更新补充 DSM 部署中 SSL 和人脸识别的支持
+
 ## 安装 PVE
 
 去官网下载 ISO 镜像，我使用 Ventoy 来进行引导，也可以通过写盘工具直接把 ISO 写到 U 盘，这里最开始我卡 loading，原因是 Ventoy 的版本太老了，升级一下就正常了（不需要格盘）。
+
 安装 PVE 的教程很多，也没什么注意的点，IP 只要写对就没啥问题，安装的时候 Ventoy 引导就保持默认第一个。
 
 参考视频: [利用PVE虚拟机，来打造属于自己的All In One系统吧！](https://www.bilibili.com/video/BV1bc411v7A3/?share_source=copy_web&vd_source=bb09006a95944f3a8aec376ed6eeb2e7)
@@ -60,7 +67,73 @@ GXNAS 大佬的镜像直接是支持虚拟网卡的，所以直接选半虚拟�
 启用 MacOS 的时间机器支持：[官方文档](https://kb.synology.cn/zh-cn/DSM/tutorial/How_to_back_up_files_from_Mac_to_Synology_NAS_with_Time_Machine)，总结就是新建好共享文件夹，给新建个用户(配额还是建议写一下 300-500G 够用了)，开启 **SMB** 服务，高级设置里**启用 Bonjour 服务发现**和**启用通过 SMB 进行 Bonjour Time Machine 播送**，设置下文件夹完成。
 
 备份 PVE：和时间机器差不多，新建个文件夹，开启共享的 NFS 服务，然后在 NFS 权限里添加 PVE 的 IP 权限，映射为 admin，所有能勾的都勾上。然后去 PVE 存储里添加 NFS 即可，内容选 VZDump备份（或者你还想存其他东西）。
+
 PS：不要备份 DSM 本身，会出问题，快照最快最小，需要本体才能恢复，停止和挂起基本一致，可以 PVE Boom 了进行恢复，建议停止模式，备份时虚拟机会暂停几分钟直到备份后启动。
+
+### SSL 支持
+
+因为我需要公网访问，幸运的是家里有公网 IP，于是我只需要配一个端口转发和 DDNS-Go 之类的服务就可以了。
+
+{{< admonition type=tip title="注意" open=true >}}
+需要注意的是，如果需要使用 Drive 客户端进行文件同步，需要对 6690 端口进行映射，这个貌似是在客户端写死的，当然如果只用网页版的 Drive，那是不需要的。
+{{< /admonition >}}
+
+ok，继续，公网访问当然最好还是 https，那这就会牵扯到 SSL 证书问题，如果你有一个域名，那么问题不大，我这里是托管在 CF，使用 ACME 脚本一键申请更新 SSL 证书。
+
+通过脚本安装的话，acme 可以直接调用群晖本地的工具生成临时用户进行证书安装。
+
+``` sh
+# 切换到root账户
+sudo su
+# 进入root home目录
+cd ~
+# 进入 DSM 的 shell 安装脚本
+curl https://get.acme.sh | sh -s email=you@gmail.com --force
+
+## 设置CF Account 信息，在 CF 控制台获取，记得授予 DNS 的操作权限
+export CF_Account_ID=""
+## 设置CF Token信息
+export CF_Token=""
+
+## 进入/root/.acem.sh目录
+cd /root/.acme.sh
+
+# 申请证书，--server letsencrypt 指定申请 letsencrypt 证书
+# d [example.com](http://example.com/) 指定要申请证书的域名是 [example.com](http://example.com/)
+# d *.example.com 说明申请的证书是泛域名证书
+./acme.sh --issue --server letsencrypt --dns dns_cf -d www.xxx.xyz -d soda.xxx.xyz
+
+## 部署
+## 设置使用临时管理员账户
+export SYNO_USE_TEMP_ADMIN=1
+
+## 在 /root/.acme.sh 目录下执行命令部署证书
+./acme.sh --deploy --deploy-hook synology_dsm -d www.xxx.xyz
+```
+
+执行完上面的命令，那么基本就可以在 DSM 中看到这个证书生效了，申请证书需要验证域名的所有权，这里是通过 DNS 记录来认证的，所以申请 CF token 的时候记得一定要选上 DNS 的操作权限。
+
+letsencrypt 的证书有效期也就几个月，为了能无缝续期，建一个定时任务，可以设置每周执行一次自定义脚本：`/root/.acme.sh/acme.sh --cron --home /root/.acme.sh`
+
+到此，理论上我们的 DSM SSL 证书就会一直有效了。
+
+### 人脸识别支持
+
+黑群晖装完后 Photos 应用会发现一个尴尬的问题是无法人脸自动识别，如果不需要那就无所谓，如果想要用，那可以打一个 [Synology_Photos_Face_Patch](https://github.com/jinlife/Synology_Photos_Face_Patch) 补丁。
+
+这个我们可以直接通过 DSM 自带的计划任务来用 root 执行，不需要自己进 shell 操作了，新建一个任务，选择 root 执行，这个执行一次就可以，所以定一个时间执行完毕后关掉即可，或者直接右键运行，不需要开启。
+
+``` sh
+wget https://github.com/jinlife/Synology_Photos_Face_Patch/releases/latest/download/libsynophoto-plugin-platform.so -O /var/packages/SynologyPhotos/target/usr/lib/libsynophoto-plugin-platform.so && synopkgctl stop SynologyPhotos && synopkgctl start SynologyPhotos
+```
+
+如果执行没有问题，那么等待索引建完后应该就可以用了。
+
+### AME解码
+
+群晖从 7.2.2 版本开始移除了 VideoStation 套件，以及删除了 HEVC、AVC、VC-1 编解码器，理由是目前移动终端设备大部分都已支持这些编码，群晖认为这部分 workload 可以转移到终端设备上去降低资源开销。
+
+这个把就很无语，如果你需要用 DSM 的媒体功能，可以使用 [这个脚本](https://github.com/007revad/Video_Station_for_DSM_722) 恢复 Video Station，然后就是安装 AME，可以看看[矿神](https://imnks.com/385.html)的这篇文章，不同版本脚本也不同。
 
 ## Windows/Linux
 
@@ -121,6 +194,12 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 还没仔细研究，貌似有点复杂。
 
 ## Tailscale
+
+> [!TIP]
+>
+> PVE 中使用已经写了一篇更完全的单独的文章，移步[“PVE 中使用 Tailscale”](/pve中使用tailscale/)
+
+
 
 最开始是想装到 Docker 里的，没发现特别好的文章，也不想自己搞了，后来看很多都是装 OpenWrt，有大部分是爱快里装的，比较简单，但是显然不适合我，但是有两个项目感觉不错：
 

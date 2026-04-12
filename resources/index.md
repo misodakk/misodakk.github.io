@@ -112,27 +112,25 @@ https://ip.skk.moe
 
 https://ipcheck.ing
 
-通用 IP 检查：https://ipinfo.io
+通用 IP 检查： https://ipinfo.io
 
-Ping 测试：https://ping.pe
+Ping 测试： https://ping.pe
 
-连通性检查：https://www.17ce.com
+连通性检查： https://www.17ce.com
 
-通用测速：https://www.speedtest.net
+通用测速： https://www.speedtest.net
 
-Netflix 测速：https://fast.com
+Netflix 测速： https://fast.com
 
-CF 测速：https://speed.cloudflare.com
-
-
-
-**伪装性检测：**
+CF 测速： https://speed.cloudflare.com
 
 <br/>
 
-小众：https://ippure.com/
+**伪装性检测：**
 
-口碑不那么好但是流行的：https://ping0.cc/
+小众： https://ippure.com/
+
+口碑不那么好但是流行的： https://ping0.cc/
 
 
 
@@ -142,27 +140,27 @@ https://whoer.net/zh
 
 https://browserleaks.com/ip
 
-IP 欺诈性检查：https://scamalytics.com/ip
+IP 欺诈性检查： https://scamalytics.com/ip
 
-DNS 泄露检查：https://ipleak.net
+DNS 泄露检查： https://ipleak.net
 
-WebRTC 泄露检查：https://browserleaks.com/webrtc
+WebRTC 泄露检查： https://browserleaks.com/webrtc
 
-
+<br/>
 
 **其他工具：**
 
-ICANN 查询：https://lookup.icann.org/en
+ICANN 查询： https://lookup.icann.org/en
 
-网络服务探测：https://fofa.info
+网络服务探测： https://fofa.info
 
-网站分析：https://web-check.xyz
+网站分析： https://web-check.xyz
 
-IP 检查备用：https://ip.im
+IP 检查备用： https://ip.im
 
 ### 资源嗅探
 
-主流视频站视频下载：https://cutcut.top/
+主流视频站视频下载： https://cutcut.top/
 
 ### 颜色
 

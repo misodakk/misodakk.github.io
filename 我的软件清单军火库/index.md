@@ -30,8 +30,12 @@
 4. Termius
 
    如果用，推荐[这个补丁](https://github.com/ArcSurge/Termius-Pro-zh_CN?tab=readme-ov-file)
-   
+
 5. MobaXterm
+
+6. [Netcatty](https://github.com/binaricat/Netcatty)
+
+   新开源一个，做小白鼠？
 
 Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Electron 你不要过来啊），外加没中文劝退了。
 
@@ -55,7 +59,7 @@ Termius 之前在 macOS 上应该用过，怎么说呢，感觉卡卡的（Elect
 
    Notepad++ 的替代品，++ 的作者近些年感觉有点颠，推荐替换
 
-affinity 的软件宣布免费了，可以一定程度替代 adobe。
+affinity 的软件宣布免费了，~~可以一定程度替代 adobe~~。
 
 ### 补丁增强
 
@@ -113,7 +117,11 @@ Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search"
 
 Rustdesk 能自建最好，我最近也打算自建一个试一下；
 1. Rustdesk
+
+   慎用，因为过于好用，很多诈骗也在用，基于国情的处理方式，使用就有概率接到 96110
+
 2. 网易 UU 远程
+
 3. TeamViewer
 
 除非必要，目前已不再推荐向日葵、ToDesk 之类，体验并不好。
@@ -143,13 +151,46 @@ brew bundle --file="~/Desktop/Brewfile"
 5. WindTerm
 
 Termius 感觉卡顿严重，也许我机器太老了。
+
+### 网络测试
+
+基于国情，国内应该都有一批自学成才的“网络专家”了
+
+1. [TraceBar](https://github.com/tracebar-app/tracebar)
+
+   mtr 可视化
+
+2. [Rockxy](https://github.com/LocNguyenHuu/Rockxy)
+
+   开源的抓包程序
+
+3. [neko-master](https://github.com/foru17/neko-master)
+
+   流量审查
+
+### 日常软件
+
+通用软件，Win 没有
+
+1. [MoePeek](https://github.com/cosZone/MoePeek)
+
+   划词搜索
+
 ## 通用&服务类
+
+### 日常软件
+
+Mac / Win 共有
+
+1. [MiaoYan](https://github.com/tw93/MiaoYan)
+
+   typora 替代者？
 
 ### 插件
 
 沉浸式翻译删掉了，不光是因为最近的隐私事件，VIP 功能太杂了，我其实都用不上，换成简约翻译。
 
-1. Kiss Translator
+1. Kiss Translator / 简约翻译
 
    配合 L 站的 DeepLX 效果更好
 
@@ -165,31 +206,31 @@ Termius 感觉卡顿严重，也许我机器太老了。
 
 7. Checker Plus for Gmail
 
-8. Elmo Chat
+8. Hover Zoom+
 
-9. Hover Zoom+
+9. JSON-handle
 
-10. JSON-handle
+10. Octotree
 
-11. Octotree
+11. SteamDB
 
-12. SteamDB
+12. FlowMouse - 心流鼠标手势
 
-13. SuperCopy
+13. Wikiwand - Wikipedia Modernized
 
-14. Wikiwand - Elevate Wikipedia with AI
+14. Wikipedia Search
 
-15. Wikipedia Search
+15. 划词翻译
 
-16. 划词翻译
+16. 几枝
 
-17. 几枝
+17. 為什麼你們就是不能加個空格呢
 
-18. 為什麼你們就是不能加個空格呢
+18. 扩展管理器（Extension Manager）
 
-19. 扩展管理器（Extension Manager）
+19. 终结内容农场
 
-20. 终结内容农场
+20. Header Editor Lite
 
 不太常用的一些：
 
@@ -238,34 +279,59 @@ Postman 用惯了，但是有点越来越恶心了，替代的也用了不少，
 
 Apifox 很多人推荐，但是个人还是不太喜欢，功能太多也有点烦，比较喜欢极简主义的；并且也是强制登录，强制云同步。
 
-并且大概率也是（Electron 你不要过来啊）
+并且大概率也是（Electron 你不要过来啊），最近还出现了重大安全漏洞，官网没有第一时间通知，败好感。
 ### AI 开发辅助
-目前用的还是较少，但是很多人在吹，老了折腾不动了，思想也落后了还是觉得 AI 的代码不如自己写的好，速度确实快，适合一些简单、要快速开发的项目吧。
+目前用的还是较少，但是很多人在吹，老了折腾不动了。后面可能会单独出一些文章来记录学习历程。
 
-1. [Roo Code](https://roocode.com/)
+1. [Alma](https://alma.now/)
+
+   大佬出品的精美桌面 GUI，Mac 体验更好
+
+2. [CC Switch](https://github.com/farion1231/cc-switch)
+
+3. [Roo Code](https://roocode.com/)
 
    具有智能代码生成和重构功能的高级 AI 驱动编码助手。
    应该就是 CC 这种的替代版，可以选择多种模型，比如本地部署的，以达到完全免费使用。
    VSC Only
 
-2. [RunVSAgent](https://github.com/wecode-ai/RunVSAgent)
-
-   使开发者能够在 JetBrains IDEs 或其他 IDE 平台中运行基于 VSCode 的编码代理和扩展。
-   应该是基于 Roo Code 的。
-
-3. Claude Code Router
+4. [claude-code-router](https://github.com/musistudio/claude-code-router)
 
    将 Claude Code 请求路由到不同的模型，并自定义任何请求。
+
+5. [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)
+
+   OpenCode 辅助工具
+
+6. ~~[RunVSAgent](https://github.com/wecode-ai/RunVSAgent)~~
+
+   ~~使开发者能够在 JetBrains IDEs 或其他 IDE 平台中运行基于 VSCode 的编码代理和扩展。~~
+   ~~应该是基于 Roo Code 的。~~
 
 看到有人发某 V 站的秀优越的帖子，以防有人不知道，像我这种穷鬼，Claude Code 是用不起的，别再说什么程序员一天的收入来买 $200 的 AI 也是物超所值的。
 
 ### 魔法相关
 
-Win 优先 Spark，Mac 优先 Surrge 学习版（可惜新版本的 TUN 需要关 SIP）。
+Win 优先 Spark，Mac 优先 Surrge 学习版（可惜新版本的 TUN 需要关 SIP），CatBar / ClashBar 也确实漂亮。
 
 sing-box 还是有点望而却步。
 
 裸内核运行也不是不可能，搭配 [zashboard](https://github.com/Zephyruso/zashboard) 面板，也未必会差。
+
+
+
+国内安卓因为大部分都会上报应用列表，非 Root 的情况下，如果介意可以尽量选择不太那么主流的 App；Root 环境下优先 Surfing。
+
+例如魔法感觉 YumeBox 就不错，三方的小飞机有 AyuGram、Turrit、Momo，nekogram 经历这次隐私风波还是别用了，虽然确实好用。
+
+
+
+iOS 如果使用飞机，规则有一份推荐：Johnshall/Shadowrocket-ADBlock-Rules-Forever
+
+
+
+这一部分看[海豚](https://www.haitunt.org/index.html)整理的就行了，非常全面。
+
 ### 影音聚合
 
 除必要情况，使用 Emby 公费服，一个月几块钱换来的质量比 CMS 的那些资源要高的多。
@@ -278,6 +344,8 @@ sing-box 还是有点望而却步。
    更新：存活了不到一个月，被人举报 DMCA 了，转生版本 [LunaTV](https://github.com/MoonTechLab/LunaTV)，现在也放弃维护了。
 
    替代先参考 [KatelyaTV](https://github.com/katelya77/KatelyaTV) 吧。
+
+   热心网友分享的资源地址：[LunaTV-config](https://github.com/hafrey1/LunaTV-config)
 
 2. [爱看机器人](https://v.ikanbot.com/)
 
@@ -316,4 +384,8 @@ sing-box 还是有点望而却步。
 - 百分浏览器
 - Supermium
 - Thorium
+
+---
+
+**[transmission-web](https://github.com/jianxcao/transmission-web)** 不错的 BitTorrent  GUI；
 

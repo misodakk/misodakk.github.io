@@ -17,6 +17,8 @@
 
 而关于 DNS 泄露，扫盲可以去看不良林的视频，我的观点是日常使用不需要关注，除非是你做一些敏感的东西，这个玩意是要牺牲一定性能的，大部分人其实没必要。
 
+后续的配置更新会放到 [magic-config](https://github.com/bfchengnuo/magic-config)
+
 ``` yaml {open=false title="通用配置V2.0"}
 subComm: &subComm
   type: http

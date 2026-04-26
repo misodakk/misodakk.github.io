@@ -3,6 +3,10 @@
 <!--more-->
 {{< admonition type=info title="更新记录" open=true >}}
 
+**2026-04-19：**
+
+DNS 部分写的不够清晰，补充 DNS 部分的说明。
+
 **2025-08-24：**
 
 经过一段时间的使用，发现这套分流配置还是有点问题，于是又魔改了一版，之前的配置是从 Clash 继承而来的，现在 Clash 已经没了，Mihomo （ClashMeta）目前还在维护，虽说 Mihomo 可以兼容 Clash，这次更新一版 Mihomo 专有的配置文件吧。
@@ -835,7 +839,19 @@ clash DNS 请求逻辑：
 
 fake-ip-filter 的作用就是让一些请求不走 fake-ip，因为有些功能 dns 返回私有 IP 是会有问题的，再说国内的网站也没必要。
 
-特殊的两个：default-nameserver 是默认的 DNS，必须是 IP，用于解析 DNS 服务器的域名；而 proxy-server-nameserver 仅用于解析代理节点的域名，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置。
+主要的几个配置：
+
+**default-nameserver**：启动级别的基础 DNS，用来解析 nameserver 、proxy-server-nameserver 里的 DNS，或者说它是解析 DNS 服务器的 DNS，所以必须是 IP，不然没人来解析它的域名。
+
+**nameserver**：主要 DNS，大部分域名都会用它做解析。
+
+**nameserver-policy**：按域名规则指定 DNS 服务器，例如某些域名不要走默认 nameserver，而是单独指定去某个 DNS 查。顺序是先看 nameserver-policy 有没有命中，没有就用 nameserver 里的去查。
+
+**proxy-server-nameserver**：专门给代理服务器节点本身的域名解析准备的，就是配代理节点服务器的 server 那个域名用的，对于节点服务器的域名，这个优先级最高（如果配置了不会再看 nameserver-policy，并且不支持按域名配置，只能配统一的），如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置。
+
+使用过程中发现当配置 `respect-rules: true` 时，要求 proxy-server-nameserver 必须配置。
+respect-rules 的作用比较简单，就是让 nameserver、fallback、nameserver-policy 里配置的 DNS 服务器连接过程也遵守 mihomo 的 rules 规则。
+如果不配置 proxy-server-nameserver，容易套娃：查 DNS 要走代理 → 走代理要解析节点域名 → 解析节点域名又要查 DNS → 继续绕圈
 
 DNS 配置注意事项：
 

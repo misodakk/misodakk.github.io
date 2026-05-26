@@ -140,6 +140,8 @@ brew install mas
 brew bundle --file="~/Desktop/Brewfile"
 ```
 
+必备命令：`xattr -cr xxxxx` 和 `codesign --deep -fs - xxxxx`，学习版软件去除属性和自签名。
+
 ### 终端工具
 
 参考 Windows 中的介绍，Xshell 没有 Mac 版，现在使用默认终端 + 食用；

@@ -80,6 +80,65 @@ uv pip install --system pandas
 
 VirtualFish 和 uv 这类工具完全可以并且通常推荐和版本管理工具搭配使用，毕竟他们解决的不是一类问题。
 
+---
+
+更新：了解了下现在的 uv，已经不是加速 pip 这么简单的工具了；同时 `python -m venv` 是 **Python 自带的虚拟环境创建工具**，模块名叫 venv。它从 **Python 3.3** 开始内置，用来创建独立的 Python 虚拟环境，避免不同项目之间的依赖冲突。
+
+``` shell
+python -m venv .venv
+# 激活, powershell 和 cmd
+.venv\Scripts\Activate.ps1
+.venv\Scripts\activate.bat
+
+where python
+# 退出
+deactivate
+```
+
+再说 uv ，它是一个用 Rust 写的 Python 包管理/环境工具，可以极大的提高 pip 的速度，速度来自 Rust 实现 + 并发 IO + 强缓存 + 高效依赖解析 + 统一工具链减少重复工作。
+
+uv 可以替代 pip、virtualenv、pip-tools、pyenv 等工具，提供依赖管理、虚拟环境创建、Python 版本管理等一站式服务。
+
+``` shell
+cd myproject
+# 初始化项目，以 pyproject.toml 为中心的现代项目管理方式
+uv init
+# uv init myproject
+
+uv python list
+uv python install 3.12
+
+# 创建虚拟环境
+uv venv
+# 指定版本，前提是本机有对应版本，或者 uv 能帮你找到。
+uv venv --python 3.11
+
+# 激活环境
+# macOS / Linux
+source .venv/bin/activate
+# Windows（PowerShell）
+.venv\Scripts\activate
+
+# 添加依赖
+uv add requests pandas
+# 安装 requirements.txt
+uv sync
+
+# 运行，无需激活环境
+uv run python main.py
+# 运行模块
+uv run -m app
+
+deactivate
+
+# 如果你还想保留类似 pip 的使用习惯
+uv pip install requests
+uv pip list
+uv pip freeze
+```
+
+uv 初始化的项目会使用 pyproject.toml 和 uv.lock 这类文件来管理依赖，类似 Node，确保在任何环境中都能安装完全相同的依赖版本。
+
 ## Java
 
 Java 生态我感觉相比之下还是要好得多，maven/gradle 下大部分的库都是可以向下兼容的，从 JDK8 之后 JDK 的向下兼容会差一些，毕竟放弃历史包袱也是为了更快的适应时代潮流。

@@ -132,7 +132,7 @@ AI coding 工具最怕黑盒依赖。
 在 class 定义中非常直观，不需要 AI 记住复杂组件 API，省上下文。
 
 
-### Radix UI 
+### Radix UI
 Radix UI 是一个面向 React 的 无样式 / 低样式 UI 基础组件库。
 
 也就是说，它主要提供组件的 行为、交互、可访问性和状态管理，但基本不替你决定最终长什么样。
@@ -315,6 +315,17 @@ Vite 目前作为纯静态前端打包工具，优点是：
 - 部署简单，打包后就是静态文件
 - 不需要维护 Node.js SSR 服务器
 
-
 当然 Next.js 可以打包成纯静态资源文件，就是没有 Vite 那么的轻量级。
+
+## 后记
+
+最近发现，除了老牌的 Radix UI，在同一层级有年轻的 Base UI，吸收了一些现有 headless 库的经验；
+
+Radix UI 出来得更早，shadcn / ui 默认大量使用 Radix UI，所以它的生态非常成熟。
+
+Base UI  更新、更现代、也很强，但生态还在成长。
+
+它们看起来很像，但具体命名、props、事件、状态属性会不一样。
+
+基于 Base UI 的生态，也有类似 shadcn/ui 的存在，就是 coss ui，也可以看作 Base UI 生态里的 shadcn-like 项目。
 

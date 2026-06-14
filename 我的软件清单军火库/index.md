@@ -273,16 +273,27 @@ Mac / Win 共有
 Postman 用惯了，但是有点越来越恶心了，替代的也用了不少，还是找不到满意的。
 
 1. Reqable
+
 2. DBeaver
+
 3. [EasyPostman](https://github.com/lakernote/EasyPostman)
+
 4. [Netcatty](https://github.com/binaricat/Netcatty)
 
    新开源一个，SFTP + SSH + AI agent，最近感觉挺火的，做小白鼠？
-5. Apifox
+
+5. Rebased
+
+   从 JetBrains 系列把好用的 Git GUI 工具分离出来。
+
+6. Apifox
 
 Apifox 很多人推荐，但是个人还是不太喜欢，功能太多也有点烦，比较喜欢极简主义的；并且也是强制登录，强制云同步。
 
 并且大概率也是（Electron 你不要过来啊），最近还出现了重大安全漏洞，官网没有第一时间通知，败好感。
+
+对于 JetBrains 系列，热心网友提供的[服务器](https://521868.xyz)，能活多久就不知道了。
+
 ### AI 开发辅助
 目前用的还是较少，但是很多人在吹，老了折腾不动了。后面可能会单独出一些文章来记录学习历程。
 
@@ -397,4 +408,15 @@ iOS 如果使用飞机，规则有一份推荐：Johnshall/Shadowrocket-ADBlock-
 ---
 
 **[transmission-web](https://github.com/jianxcao/transmission-web)** 不错的 BitTorrent  GUI；
+
+---
+
+Docker 管理 WebUI：Portainer，汉化版本：6053537/portainer-ce、outlovecn/portainer-cn；
+
+### Android
+
+之前特意搞 Root 来玩，后来发现也没什么意思，不过还是备注下相关资源备用。
+
+SukiSu、Magisk、LSPosed、KernelSU
+
 

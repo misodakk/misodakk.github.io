@@ -405,6 +405,8 @@ iOS 如果使用飞机，规则有一份推荐：Johnshall/Shadowrocket-ADBlock-
 - Supermium
 - Thorium
 
+如果由于特殊情况必须使用 Win7 老系统，很多软件已经无法运行，安装 VxKex 可能会有所缓解。
+
 ---
 
 **[transmission-web](https://github.com/jianxcao/transmission-web)** 不错的 BitTorrent  GUI；

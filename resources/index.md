@@ -69,7 +69,7 @@ IDM 可以跟随[这个发布网站](https://idm.ckk.ir/)进行更新。
 
 - [吻妻](https://www.newxitong.com/)
 
-  专注 Win7？
+  专注 Win7？搭配 VxKex 可以解决一些程序无法运行的问题。
 
 ### 精简版 Windows
 

@@ -37,7 +37,7 @@ https://epoch.ai
 
 根据 Pi 发布的研究，现在模型和 Harness 的绑定越来越深，也就是你用 GPT 的模型，那么只有搭配官方的 Codex 才能达到最佳效果；A\ 也是一样的道理，使用其他的 Harness 在工具调用等方面会出现幻觉，可能和训练方向有关。
 
-GPT-6 系列评价不是很好，基本被 Opus 5.5 按着打；目前也就 GPT-6 Astra 还能顶一顶，但是已经没有那么风光
+GPT-6 系列评价不是很好（尽量不要用 6 Sol ！），基本被 Opus 5.5 按着打；目前也就 GPT-6 Astra 还能顶一顶，但是已经没有那么风光
 
 ## 编程主力
 
@@ -100,6 +100,14 @@ ASR 可以直接用 Mimo 或者阿里的千问系列，Mimo 更便宜，10 块�
 CLI：Grok Build、Codex CLI、Claude Code CLI
 
 细分：Reasonix（DeepSeek）、Claude Code（claude）
+
+国产：WorkBuddy、Qoder
+
+> WorkBuddy 和 Qoder 都在送积分，能免费薅才是最香的！
+>
+> WorkBuddy 办公方向可能强一些，Qoder 的 UI 很舒服。
+>
+> 敏感代码选择 Agent 时，非开源的要慎重，ZCode 和 Claude Code  就是前车之鉴
 
 开源的套壳方向：
 

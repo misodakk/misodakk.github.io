@@ -34,7 +34,7 @@
 ## {{< fa-icon solid rocket >}}Windows 软件/综合
 
 1. [4 分贝](https://4fb.cn/) :tada:
-   
+
      可以说是 423 down 完美替代，但是资源不是很全。
 
 2. [佛系软件](https://foxirj.com/)
@@ -45,11 +45,13 @@
 
      或者还可以看看 [GenP](https://github.com/etherized/GenP) 这个项目或者 [gen.paramore](https://gen.paramore.su/)，可惜 vposy 大佬停更~~离职~~了
 
-3. [52pojie](https://www.52pojie.cn/)
+4. [52pojie](https://www.52pojie.cn/)
 
-4. [cybermania](https://www.cybermania.ws/)
+5. [cybermania](https://www.cybermania.ws/)
 
-5. [filecr](https://filecr.com/en-us/)
+6. [filecr](https://filecr.com/en-us/)
+
+     仔细甄别恶意软件
 
 特殊的一些软件，NavicatPremium 参考这篇[大佬的博客](https://github.lijunyi.xyz/blogs/app/2022/NavicatPremium16.html)；
 
@@ -232,16 +234,11 @@ Yandex 目前感觉效果应该是最好的，但是魔法网络环境问题，�
 
    体验比较好的一个，[开源地址](https://github.com/LYX9527/what-happen) / [在线地址](https://news.yltfspace.com/)，但是目前体验有点卡顿
 
-3. [LDLive](https://live.smnet.studio/)
-
-   L 站网友提供的免费直播
-
 ## {{< fa-icon solid rocket >}}免费网盘
 
 - [钛盘](https://www.tmp.link/)
   免费好用的临时文件分享服务
 - [萌盘](https://pan.moe/login)
-- [取文件](https://quwenjian.com/session)
 - [Koofr](https://koofr.eu/)
   10G 免费，支持 WebDAV
 

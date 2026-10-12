@@ -21,40 +21,43 @@ https://artificialanalysis.ai
 
 https://epoch.ai
 
+[套餐性价比](https://real-api-pricing.vercel.app/#lang=zh)
+
 个人经验（预算充足的无视）：大部分情况优先选择性价比模型，解决不了的上主力模型，再解决不了的尝试天花板；特殊场景使用本地部署的模型。
 
 ## 更新记录
 
 - 2026-09-13：新增 Fable 5.1、GPT-6 Astra、gemini-3.8-flash、GLM-5.3-Flash、DeepSeek V4.1 Flash
 - 2026-09-25：新增 GPT-6 Sol、opus 5.5
+- 2026-10-11：基于当前的风向，降低对 OAI 的评价
 
 ## 天花板
 
-来解决复杂问题和长任务编排，如：
+来解决复杂问题和长任务编排，**不在意价格的请作为主力使用**，如：
 
-- **GPT-6 Astra**
-- **Claude Fable 5**
+- ~~GPT-6 Astra~~
+- **Claude Fable 5 系列**
 
 根据 Pi 发布的研究，现在模型和 Harness 的绑定越来越深，也就是你用 GPT 的模型，那么只有搭配官方的 Codex 才能达到最佳效果；A\ 也是一样的道理，使用其他的 Harness 在工具调用等方面会出现幻觉，可能和训练方向有关。
 
-GPT-6 系列评价不是很好（尽量不要用 6 Sol ！），基本被 Opus 5.5 按着打；目前也就 GPT-6 Astra 还能顶一顶，但是已经没有那么风光
+GPT-6 系列评价很差，基本被 Opus 5.5 按着打；目前也就 GPT-6 Astra 还能顶一顶，但是已经没有那么风光；如果实在要用，至少是 6.1 Sol，Astra 性价比不如 Opus 5.5
 
 ## 编程主力
 
-能处理绝大部分的问题，如：
+能处理绝大部分的问题，如果**对价格不是非常敏感，可以日常主力使用**，如：
 
-- **GPT-5.6 Terra / Sol**
+- **GPT-5.6 Terra / Sol / GPT-6.1 Sol**
 - **GLM-5.2 / GLM-5.3**
 - **Kimi-k3**
 - **Claude Opus 5.5 （很强）**
 
-阿里的 qwen3.8-max 体感也不错，和 5.2 搭配使用效果更好，但是价格太贵。
+阿里的 qwen3.8-max 体感也不错，和 5.3 搭配使用效果更好，但是价格太贵。
 
 得益于模型的越来越聪明（起码是编程方向），普通的模型搭配任意的 Harness 就可以处理大部分的任务，如果不是特别复杂的任务，到这一层基本都能处理。
 
 ## 编程性价比
 
-能处理绝大部分日常任务，非常便宜，速度飞快（很重要！）：
+能处理绝大部分日常任务，非常便宜，速度飞快（很重要！）对价格敏感的人群选择主力使用：
 
 - DeepSeek V4.1 Flash
 - GPT-5.6-luna
@@ -63,7 +66,9 @@ GPT-6 系列评价不是很好（尽量不要用 6 Sol ！），基本被 Opus 5
 
 这一部分模型就主打一个便宜，一般的任务也都能用，在额度紧张时当作主力也问题不大。
 
-体感方面 GLM-5.3-Flash 思考太慢了，Qwen3.8-Flash 可能是更好的选择，**不过这个层级，还是谁便宜用谁**。
+DeepSeek V4.1 Flash 还不错，如果价格回到之前，那将是绝杀。
+
+体感方面 GLM-5.3-Flash 思考太慢了，Qwen3.8-Flash 可能是更好的选择？，**不过这个层级，还是谁便宜用谁**。
 
 其他的例如 gemini-3.7-flash、grok-4.5、grok-4.6 当作备用也非常不错，速度快，成本低。
 
@@ -93,13 +98,17 @@ ASR 可以直接用 Mimo 或者阿里的千问系列，Mimo 更便宜，10 块�
 
 ### 好用的工具
 
-顶级：Codex（改名 ChatGPT）
+聚合网关：CCS / **magpie**
+
+其他 Agent 代表：
+
+~~顶级：Codex（改名 ChatGPT）~~，更新后和搭配目前最新的 GPT-6 系列体验没有那么好，思考时间长，过度思考的嫌疑。
 
 极简：Pi，DeepSeek Harness（DSH）
 
 CLI：Grok Build、Codex CLI、Claude Code CLI
 
-细分：Reasonix（DeepSeek）、Claude Code（claude）
+细分：Reasonix（DeepSeek）、Claude Code（claude）、Cherry Studio（LLM 前端）
 
 国产：WorkBuddy、Qoder
 
@@ -109,11 +118,13 @@ CLI：Grok Build、Codex CLI、Claude Code CLI
 >
 > 敏感代码选择 Agent 时，非开源的要慎重，ZCode 和 Claude Code  就是前车之鉴
 
-开源的套壳方向：
+开源的套壳**多 Agent 编排型桌面客户端**方向（ADE，Agent Development Environment）：
 
 - Cherry Studio
 - Cindy
 - Alma
+- Orca
+- AionUi
 - [PiDeck](https://github.com/ayuayue/PiDeck)
 - [Waku](https://github.com/egoist/waku)
 

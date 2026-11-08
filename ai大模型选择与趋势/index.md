@@ -21,15 +21,28 @@ https://artificialanalysis.ai
 
 https://epoch.ai
 
+https://llm2014.github.io/llm_benchmark
+
 [套餐性价比](https://real-api-pricing.vercel.app/#lang=zh)
 
 个人经验（预算充足的无视）：大部分情况优先选择性价比模型，解决不了的上主力模型，再解决不了的尝试天花板；特殊场景使用本地部署的模型。
 
 ## 更新记录
 
-- 2026-09-13：新增 Fable 5.1、GPT-6 Astra、gemini-3.8-flash、GLM-5.3-Flash、DeepSeek V4.1 Flash
-- 2026-09-25：新增 GPT-6 Sol、opus 5.5
-- 2026-10-11：基于当前的风向，降低对 OAI 的评价
+{{< timeline >}}
+{{< timeline-item date="2026-10-11" >}}
+基于当前的风向，降低对 **OAI** 的评价。
+{{< /timeline-item >}}
+{{< timeline-item date="2026-09-25" >}}
+新增 **GPT-6 Sol**、**Opus 5.5**。
+{{< /timeline-item >}}
+{{< timeline-item date="2026-09-13" >}}
+新增 **Fable 5.1**、**GPT-6 Astra**、**Gemini 3.8 Flash**、**GLM-5.3-Flash**、**DeepSeek V4.1 Flash**。
+{{< /timeline-item >}}
+{{< timeline-item date="2026-11-07" >}}
+新增主力模型 **Gemini 4 Argon**、Kimi-K3.1 Pro。
+{{< /timeline-item >}}
+{{< /timeline >}}
 
 ## 天花板
 
@@ -46,21 +59,24 @@ GPT-6 系列评价很差，基本被 Opus 5.5 按着打；目前也就 GPT-6 Ast
 
 能处理绝大部分的问题，如果**对价格不是非常敏感，可以日常主力使用**，如：
 
-- **GPT-5.6 Terra / Sol / GPT-6.1 Sol**
-- **GLM-5.2 / GLM-5.3**
-- **Kimi-k3**
+- ~~GPT-5.6 Terra / Sol~~ / **GPT-6.1 Sol**
+- **GLM-5.3**
+- **Kimi-K3.1 Pro**
+- **Gemini 4 Argon**
 - **Claude Opus 5.5 （很强）**
 
 阿里的 qwen3.8-max 体感也不错，和 5.3 搭配使用效果更好，但是价格太贵。
 
 得益于模型的越来越聪明（起码是编程方向），普通的模型搭配任意的 Harness 就可以处理大部分的任务，如果不是特别复杂的任务，到这一层基本都能处理。
 
+K3.1 能力其实挺不错的，可惜价格不美丽。最近出的 Gemini 4 Argon 也非常不错
+
 ## 编程性价比
 
 能处理绝大部分日常任务，非常便宜，速度飞快（很重要！）对价格敏感的人群选择主力使用：
 
 - DeepSeek V4.1 Flash
-- GPT-5.6-luna
+- ~~GPT-5.6-luna~~
 - GLM-5.3-Flash
 - Qwen3.8-Flash
 
@@ -70,7 +86,7 @@ DeepSeek V4.1 Flash 还不错，如果价格回到之前，那将是绝杀。
 
 体感方面 GLM-5.3-Flash 思考太慢了，Qwen3.8-Flash 可能是更好的选择？，**不过这个层级，还是谁便宜用谁**。
 
-其他的例如 gemini-3.7-flash、grok-4.5、grok-4.6 当作备用也非常不错，速度快，成本低。
+其他的例如 gemini flash 系列、grok 系列，当作备用也非常不错，速度快，成本低。
 
 如果处理问题效果或者效率不理想，切换到上一层模型；对于复杂问题，即使智力低的模型最终通过 Loop 可以解决，总耗费的 token 可能比用高智力的模型还多，所以感觉不对就直接切模型，别犹豫。
 
